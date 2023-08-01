@@ -1,0 +1,1259 @@
+:root{
+    --principal: #ff0000;
+    --subcor1: #ff4f00;
+    --subcor2: orange;
+    --contraste: #008000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* NAV PRINCIPAL */
+nav {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 5%;
+    height: 100px;
+    background-color: #313131;
+    box-shadow: 1px 1px 5px;
+}
+
+nav .logo {
+    float: left;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-style: italic;
+    color: #fff;
+    cursor: context-menu;
+}
+
+
+/* Lista da nav */
+nav .links {
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .links li {
+    list-style: none;
+}
+
+nav .links a {
+    display: block;
+    padding: 1em;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav .links a:hover{
+    color: var(--subcor1);
+}
+
+/* SUBMENU TÊNIS */
+h3{
+    color: var(--subcor1);
+    margin-bottom: 10px;
+}
+
+.submenu-tenis{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 76px;
+    left: 0;
+    z-index: 11;
+    padding-left: 50px;
+    display: none;
+    background-color: #3a3a3a;
+}
+
+.li-tenis:hover .submenu-tenis {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.submenu-tenis .submenu-colum .submenu-list a{
+    padding: 6px;
+}
+
+.box-um{
+    margin-top: -20px;
+}
+
+.submenu-tenis .submenu-colum .submenu-list img{
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 5px 0px 20px 10px;
+}
+
+.submenu-tenis .submenu-colum .submenu-list img:hover{
+    opacity: 0.6;
+}
+
+.submenu-colum{
+    margin-left: 160px;
+}
+
+.submenu-tenis .promocoes{
+    background-color: var(--subcor1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 220px;
+    height: 45px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+.submenu-tenis .promocoes:hover{
+    background-color: var(--principal);
+}
+
+
+/* SUBMENU MARCAS */
+.submenu-marcas {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 76px;
+    left: 0;
+    z-index: 11;
+    padding-left: 50px;
+    display: none;
+    background-color: #3a3a3a;
+}
+
+.li-marcas:hover .submenu-marcas{
+    display: block;
+}
+
+
+.submenu-columMarcas{
+    margin-top: 20px;
+    margin-left: 160px;
+}
+
+.submenu-columMarca-especiais{
+    margin-top: 20px;
+    margin-left: 220px;
+}
+
+.submenu-listMarcas {
+    display: flex;
+}
+
+
+.submenu-listMarcas-icones img{
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.submenu-listMarcas-icones img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+.especias-jordan{
+    width: 200px;
+    height: 300px;
+    background-image: url(./imagens/marcas---jordan-Desktop.webp);
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.especias-jordan p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.especias-adidas{
+    width: 200px;
+    height: 300px;
+    background-image: url(./imagens/marcas---adidas-Desktop.webp);
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 12px;
+    margin-left: 100px;
+}
+
+.especias-adidas p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.especias-nike{
+    width: 200px;
+    height: 282px;
+    background-image: url(./imagens/marcas---nike-Desktop.webp);
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+
+.especias-nike p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.btn-especias {
+    background-color: var(--subcor1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 160px;
+}
+
+.btn-especias:hover {
+    background-color: var(--principal);
+}
+
+
+/* SUBMENU HOMENS */
+.submenu-homens{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 76px;
+    left: 0;
+    z-index: 11;
+    padding-left: 50px;
+    display: none;
+    background-color: #3a3a3a;
+}
+
+.li-homens:hover .submenu-homens {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.submenu-homens .submenu-columHomens .submenu-listHomens a {
+    padding: 6px;
+}
+
+.submenu-homens .submenu-columHomens-marcas
+.submenu-listHomens img{
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 0px 10px 15px;
+}
+
+.submenu-homens .submenu-columHomens-marcas 
+.submenu-listHomens img:hover {
+    opacity: 0.6;
+}
+
+.submenu-columHomens {
+    margin-left: 160px;
+    margin-top: 35px;
+}
+
+.submenu-columHomens-marcas{
+    margin-left: 160px;
+}
+
+.btn-verOutlet{
+    background-color: var(--subcor1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px
+}
+
+.btn-verOutlet:hover{
+    background-color: var(--principal);
+}
+
+
+/* SUBMENU MULHERES */
+.submenu-mulheres{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 76px;
+    left: 0;
+    z-index: 11;
+    padding-left: 50px;
+    display: none;
+    background-color: #3a3a3a;
+}
+
+.li-mulheres:hover .submenu-mulheres{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.submenu-mulheres .submenu-columMulheres .submenu-listMulheres a {
+    padding: 6px;
+}
+
+.submenu-mulheres .submenu-columMulheres-marcas .submenu-listMulheres img {
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 0px 10px 15px;
+}
+
+.submenu-mulheres .submenu-columMulheres-marcas .submenu-listMulheres img:hover {
+    opacity: 0.6;
+}
+
+.submenu-columMulheres {
+    margin-left: 160px;
+    margin-top: 35px;
+}
+
+.submenu-columMulheres-marcas {
+    margin-left: 160px;
+}
+
+
+/* SUBMENU ACESSÓRIOS */
+.submenu-acessorios{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 76px;
+    left: 0;
+    z-index: 11;
+    padding-left: 50px;
+    display: none;
+    background-color: #3a3a3a;
+}
+
+.li-acessorios:hover .submenu-acessorios{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 1s;
+}
+
+.submenu-acessorios .submenu-columAcessorios .submenu-listAcessorios a {
+    padding: 6px;
+}
+
+.submenu-columAcessorios{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+
+/* Botão do menu responsivo */
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+
+/* Transição para responsivo */
+@media screen and (max-width: 765px) {
+    nav .logo {
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .links {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-image: linear-gradient(to bottom, #777777, #313131);
+        overflow: hidden;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+
+
+    nav .links a {
+        font-size: 20px;
+    }
+
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .submenu-tenis{
+        visibility: hidden;
+    }
+
+    .submenu-marcas {
+        visibility: hidden;
+    }
+
+    .submenu-homens{
+        visibility: hidden;
+    }
+
+    .submenu-mulheres{
+        visibility: hidden;
+    }
+
+    .submenu-acessorios{
+        visibility: hidden;
+    }
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    height: 560px;
+    background-image: linear-gradient(to bottom, #313131, #777777, whitesmoke);
+    margin-top: 101px;
+    padding-top: 20px;
+}
+
+#pesquisar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110vh;
+    height: 45px;
+    border: 1px solid #313131;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.1s;
+    font-size: 15px;
+    padding: 20px;
+    margin-left: 8px;
+}
+
+.btn-entrar{
+    background-color: var(--subcor1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 140px;
+    height: 35px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.btn-entrar:hover {
+    opacity: 0.9;
+}
+
+
+/* TELA DE LOGIN */
+.principal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.377);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+
+.tela {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 400px;
+    top: 150px;
+    margin-left: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #313131;
+    color: #fff;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    height: 300px;
+
+}
+
+.usuario,
+.senha {
+    margin-top: 4vh;
+    height: 40px;
+    width: 300px;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.conteudo a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-style: initial;
+    font-weight: lighter;
+    margin-left: 3%;
+}
+
+.conteudo a:hover{
+    text-decoration: underline;
+}
+
+.btn-login{
+    margin-top: 25px;
+    background: var(--subcor1);
+    color: white;
+    width: 310px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn-login:hover {
+    opacity: 80%;
+}
+
+.fechar {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+
+/* CARROSSEL DE PROPAGANDAS */
+.slider {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    top: -480px;
+    left: 40px;
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slides {
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    margin-top: -135px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 34px;
+}
+
+.manual-btn:not(:last-child) {
+   margin-right: 50px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    margin-top: 465px;
+    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 50px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+
+/* Informações de compra */
+.informacoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 100px;;
+    background-color: #a9a9a971;
+    height: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+.informacoes span{
+    font-weight: bolder;
+}
+
+.informacoes svg{
+    margin-right: 5px;
+}
+
+
+/* MARCAS */
+.marcas{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -520px;
+}
+
+.marcas img{
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.marcas img:hover{
+    opacity: 0.6;
+}
+
+
+/* CARROSSEL COM CARDS DE TÊNIS */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    top: -380px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo-lancamentos{
+    padding: 0 10vw;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 320px;
+    height: 430px;
+    margin-right: 40px;
+    background: linear-gradient(to top,  #474747, #66656500 30%);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag-desconto {
+    position: absolute;
+    background: whitesmoke;
+    padding: 5px;
+    border-radius: 5px;
+    color: orangered;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 60%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: black;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card-btn:hover{
+    background: #ff4f00;
+}
+
+.info-product {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: #fff;
+}
+
+.prev-btn,
+.next-btn {
+    border: none;
+    width: 8vw;
+    height: 100%;
+    position: absolute;
+    top: 00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn img,
+.next-btn img {
+    opacity: 0.6;
+}
+
+.prev-btn:hover img,
+.next-btn:hover img {
+    opacity: 1;
+}
+
+.product-card:hover .card-btn{
+    background-color: #ff4f00;
+}
+
+
+/* CARROSSEL DE LOOKS */
+.product-looks {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    top: -250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.titulo-looks {
+    padding: 0 10vw;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 60px;
+}
+
+.looks-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.looks-container::-webkit-scrollbar {
+    display: none;
+}
+
+.looks-card {
+    flex: 0 0 auto;
+    width: 330px;
+    height: 650px;
+    margin-right: 40px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.looks-image {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.looks-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-looks {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    color: black;
+    gap: 10px;
+}
+
+.btn-prev,
+.btn-next {
+    border: none;
+    width: 8vw;
+    height: 50%;
+    position: absolute;
+    top: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.btn-prev {
+    left: 0;
+}
+
+.btn-next {
+    right: 0;
+}
+
+.btn-prev img,
+.btn-next img {
+    opacity: 0.6;
+}
+
+.btn-prev:hover img,
+.btn-next:hover img {
+    opacity: 1;
+}
+
+.looks-card:hover .looks-image {
+    transform: scale(0.9);
+}
+
+.tag-pecas {
+    background: whitesmoke;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.btn-todosConjuntos {
+    width: 180px;
+    height: 40px;
+    border: 2px solid black;
+    background: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.btn-todosConjuntos:hover {
+    background-color: black;
+    color: #fff;
+}
+
+
+
+/* SEÇÃO DE BUSCA */
+.busca{
+    position: relative;
+    top: -100px;
+}
+
+.busca p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.busca span{
+    font-weight: bold;
+}
+
+.caixa-busca {
+    display: flex;
+    justify-content: center;
+}
+
+.info-busca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff4f00;
+    width: 310px;
+    height: 500px;
+    opacity: 0.9;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #d84400;
+    border-radius: 2px;
+}
+
+.info-busca h1{
+    color: #fff;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+    font-size: 40px;
+    position: relative;
+    top: -100px;
+}
+
+.info-busca:hover{
+    opacity: 1;
+}
+
+.info-busca:hover h1{
+    transform: scale(0.8);
+}
+
+
+
+/* LOJAS E RECEBER NOVIDADES */
+.lojas-novidades{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 180vh;
+}
+
+/* Lojas */
+.lojas{
+    background-image: url(./imagens/imagem-loja.webp);
+    width: 162vh;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.lojas span{
+    font-weight: bold;
+}
+
+.lojas h2{
+    z-index: 3;
+}
+
+.lojas p{
+    z-index: 3;
+    font-size: 20px;
+}
+
+.degrade{
+    position: absolute;
+    width: 162vh;
+    height: 80vh;
+    background: linear-gradient(to top, black, transparent);
+    margin-top: -45vh;
+    z-index: 2;
+}
+
+.btn-lojas{
+    width: 280px;
+    height: 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 3;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.btn-lojas:hover{
+    background-color: #fff;
+    color: black;
+}
+
+
+/* Novidades */
+.primeiro-a-Saber{
+    text-align: center;
+    margin-top: 130px;
+}
+
+.primeiro-a-Saber h1{
+    font-size: 2.8em;
+}
+
+.primeiro-a-Saber p{
+    font-size: 17px;
+    margin-top: 18px;
+}
+
+.primeiro-a-Saber span{
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+#email{
+    width: 230px;
+    height: 40px;
+    font-weight: bold;
+    color: black;
+    border: 2px solid black;
+    padding-left: 20px;
+}
+
+.btn-setaEmail{
+    height: 43.5px;
+    width: 40px;
+    border: 2px solid black;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-setaEmail:hover{
+    background-color: #ff4f00;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #313131;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .logo{
+    width: 30%;
+    height: 100%;
+    font-size: 2em;
+    font-style: italic;
+    color: #fff;
+    cursor: context-menu;
+    margin-left: 35px;
+}
+
+.conteudo-footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.footer-menu_titulo{
+    color: #ff4f00;
+    font-weight: bold;
+}
+
+.footer-menu_io{
+    color: #ff4f00;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.footer-menu_redes{
+    color: #ff4f00;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.footer-menu li{
+    list-style: none;
+}
+
+footer .footer-menu a{
+    display: block;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+footer .footer-menu a:hover{
+    color: #ff4f00;
+}
